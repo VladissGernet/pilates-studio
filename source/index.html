@@ -3,32 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
   <title>Студия пилатеса</title>
-  <!--  preload-->
-  <link rel="preload" href="css/style.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-  <!--  favicons start-->
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!--  favicons end-->
 </head>
 <body>
 <header class="main-header">
@@ -70,6 +45,7 @@
     <h2 class="visually-hidden">
       Поразительные результаты уже после нескольких занятий.
     </h2>
+    <img class="promo__image" src="img/promo/athletic-body.png" width="994" height="776" alt="Фигура мастера.">
     <p class="promo__text">
       Твоё здоровое тело через 10 занятий
     </p>
@@ -81,6 +57,7 @@
     <h2 class="about__title">
       О пилатесе
     </h2>
+    <img class="about__image" src="img/about/pilates-studio-photo.png" width="855" height="630" alt="Пример занятий.">
     <p class="about__text">
       Пилатес соединяет элементы растяжки с элементами силовой тренировки
     </p>
@@ -91,7 +68,6 @@
     <a class="about__link" href="#">
       Подробнее
     </a>
-    <img class="about__image" src="img/about/pilates-studio-photo.png" width="855" height="630" alt="Пример занятий.">
   </section>
   <section class="rates">
     <h2 class="rates__title">
@@ -99,49 +75,37 @@
     </h2>
     <ul class="rates__list">
       <li class="rates__item">
-        <h3 class="visually-hidden">
-          Записаться на уровень «Новичок».
+        <h3 class="rates__title">
+          Уровень Новичок
         </h3>
-        <p class="rates__level">
-          Уровень
-        </p>
-        <p class="rates__level-name">
-          Новичок
-        </p>
         <p class="rates__price">
           150 руб. / занятие
         </p>
-        <a class="rates__link" href="#">Записаться</a>
+        <a class="rates__link" href="#">
+          Записаться на уровень «Новичок»
+        </a>
       </li>
       <li class="rates__item">
-        <h3 class="visually-hidden">
-          Записаться на уровень «Профи».
+        <h3 class="rates__title">
+          Уровень Профи
         </h3>
-        <p class="rates__level">
-          Уровень
-        </p>
-        <p class="rates__level-name">
-          Профи
-        </p>
         <p class="rates__price">
           200 руб. / занятие
         </p>
-        <a class="rates__link" href="#">Записаться</a>
+        <a class="rates__link" href="#">
+          Записаться на уровень «Профи»
+        </a>
       </li>
       <li class="rates__item">
-        <h3 class="visually-hidden">
-          Записаться на уровень «Мастер».
+        <h3 class="rates__title">
+          Уровень Мастер
         </h3>
-        <p class="rates__level">
-          Уровень
-        </p>
-        <p class="rates__level-name">
-          Мастер
-        </p>
         <p class="rates__price">
           350 руб. / занятие
         </p>
-        <a class="rates__link" href="#">Записаться</a>
+        <a class="rates__link" href="#">
+          Записаться на уровень «Мастер»
+        </a>
       </li>
     </ul>
   </section>
@@ -152,34 +116,28 @@
     <ul class="reviews__list">
       <li class="reviews__item">
         <img class="reviews__image" src="img/reviews/user001.jpg" width="150" height="150" alt="Фото пользователя.">
-        <blockquote class="reviews__content">
-          <cite class="reviews__name">Вероника Кулешова</cite>
-          <p class="reviews__age">25 лет</p>
-          <p class="reviews__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увидела результат: тело
-            подтянулось, улучшилась осанка, появился пресс. И самое главное, пропал сильный изгиб поясничного отдела,
-            который меня очень беспокоил.</p>
-        </blockquote>
+        <cite class="reviews__name">Вероника Кулешова</cite>
+        <p class="reviews__age">25 лет</p>
+        <p class="reviews__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увидела результат: тело
+          подтянулось, улучшилась осанка, появился пресс. И самое главное, пропал сильный изгиб поясничного отдела,
+          который меня очень беспокоил.</p>
       </li>
       <li class="reviews__item">
         <img class="reviews__image" src="img/reviews/user010.jpg" width="150" height="150" alt="Фото пользователя.">
-        <blockquote class="reviews__content">
-          <cite class="reviews__name"></cite>
-          <p class="reviews__age">23 лет</p>
-          <p class="reviews__text">Начала заниматься пилатесом по достаточно банальной причине – хотелось поддерживать
-            хорошую форму, и не ездить на занятия далеко от дома. занятие пилатесом с инвентарем Зал пилатеса был
-            буквально через дорогу, поэтому и записалась туда.</p>
-        </blockquote>
+        <cite class="reviews__name"></cite>
+        <p class="reviews__age">23 лет</p>
+        <p class="reviews__text">Начала заниматься пилатесом по достаточно банальной причине – хотелось поддерживать
+          хорошую форму, и не ездить на занятия далеко от дома. занятие пилатесом с инвентарем Зал пилатеса был
+          буквально через дорогу, поэтому и записалась туда.</p>
       </li>
       <li class="reviews__item">
         <img class="reviews__image" src="img/reviews/user107.jpg" width="150" height="150" alt="Фото пользователя.">
-        <blockquote class="reviews__content">
-          <cite class="reviews__name">Оксана Тодоренко</cite>
-          <p class="reviews__age">19 лет</p>
-          <p class="reviews__text">У меня был печальный опыт занятий пилатесом, связанный с некомпетентностью
-            инструктора, который
-            проводил
-            тренировки. Я занималась пилатесом 2 месяца, а потом забросила.</p>
-        </blockquote>
+        <cite class="reviews__name">Оксана Тодоренко</cite>
+        <p class="reviews__age">19 лет</p>
+        <p class="reviews__text">У меня был печальный опыт занятий пилатесом, связанный с некомпетентностью
+          инструктора, который
+          проводил
+          тренировки. Я занималась пилатесом 2 месяца, а потом забросила.</p>
       </li>
     </ul>
   </section>
@@ -194,21 +152,18 @@
   </a>
   <ul class="main-footer__social social">
     <li class="social__item">
-      <a class="social__link" href="#" aria-label="Vkontakte.">
-        <img class="social__image" src="img/social/vk.svg" width="25"
-             height="14" alt="Vkontakte.">
+      <a class="social__link" href="#">
+        ВКонтакте
       </a>
     </li>
     <li class="social__item">
-      <a class="social__link" href="#" aria-label="Facebook.">
-        <img class="social__image" src="img/social/facebook.svg" width="10"
-             height="20" alt="Facebook.">
+      <a class="social__link" href="#">
+        Facebook
       </a>
     </li>
     <li class="social__item">
-      <a class="social__link" href="#" aria-label="Instagram.">
-        <img class="social__image" src="img/social/instagram.svg" width="17"
-             height="17" alt="Instagram.">
+      <a class="social__link" href="#">
+        Instagram
       </a>
     </li>
   </ul>
